@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingresar · Flor de Salada</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="login">
+  <div id="site-header"></div>
+
+  <main class="container narrow">
+    <div class="card">
+      <h1 style="font-size:2rem">Ingresá <svg class="icon" style="vertical-align:-3px"><use href="/img/icons.svg#flower"></use></svg></h1>
+      <p class="muted">Usá tu cuenta para comprar, dejar reseñas o administrar una empresa.</p>
+      <form id="loginForm">
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="tu@email.com"></div>
+        <div class="field"><label for="password">Contraseña</label><input id="password" name="password" type="password" required></div>
+        <button class="btn btn-primary btn-block" type="submit">Ingresar</button>
+      </form>
+      <p class="muted center" style="margin-top:16px">¿No tenés cuenta? <a href="/registro.html" style="color:var(--plum);font-weight:bold">Registrate</a></p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>Cuentas de prueba</h3>
+      <p class="muted" style="font-size:.85rem">Para probar el sistema podés usar:</p>
+      <ul style="font-size:.85rem;line-height:1.9">
+        <li><strong>Cliente:</strong> cliente@flordesalada.com / cliente123</li>
+        <li><strong>Admin de empresa:</strong> admin@flordesalada.com / admin123</li>
+        <li><strong>Superadmin:</strong> super@flordesalada.com / super123</li>
+      </ul>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/js/api.js"></script>
+  <script src="/js/cart.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedidos · Flor de Salada</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="panel" data-panel="pedidos">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="panel-layout">
+      <aside class="sidebar">
+        <a href="/panel/index.html"><svg class="icon"><use href="/img/icons.svg#chart"></use></svg> Resumen</a>
+        <a href="/panel/productos.html"><svg class="icon"><use href="/img/icons.svg#flower"></use></svg> Productos</a>
+        <a href="/panel/pedidos.html"><svg class="icon"><use href="/img/icons.svg#box"></use></svg> Pedidos</a>
+        <a href="/panel/usuarios.html"><svg class="icon"><use href="/img/icons.svg#users"></use></svg> Usuarios</a>
+        <a href="/panel/resenas.html"><svg class="icon"><use href="/img/icons.svg#star"></use></svg> Reseñas</a>
+        <a href="/panel/empresas.html"><svg class="icon"><use href="/img/icons.svg#building"></use></svg> Empresas</a>
+      </aside>
+      <div id="panelRoot">
+        <h1>Pedidos</h1>
+        <p class="subtitle">Ver las compras y cambiar su estado: pendiente, en preparación, enviado o entregado.</p>
+        <div class="card">
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Pedido</th><th>Cliente</th><th>Ramos</th><th>Entrega / Pago</th><th>Total</th><th>Estado</th></tr></thead>
+              <tbody id="orderList"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/js/api.js"></script>
+  <script src="/js/cart.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

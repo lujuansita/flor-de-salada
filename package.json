@@ -1,0 +1,15 @@
+{
+  "name": "flor-de-salada",
+  "version": "1.0.0",
+  "description": "Tienda online de Flor de Salada - flores naturales, limpiapipas, cinta de raso y crochet",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "multer": "^2.5.0"
+  }
+}

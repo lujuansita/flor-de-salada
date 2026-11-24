@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#fffdf9"/><stop offset="1" stop-color="#f4e7ea"/></linearGradient></defs>
+  <rect width="400" height="400" rx="18" fill="url(#bg)"/>
+  <rect x="10" y="10" width="380" height="380" rx="12" fill="none" stroke="#b98a4b" stroke-width="1" opacity=".35"/>
+  <g stroke="#6f8067" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M200 350 C198 280 200 210 200 150"/>
+    <path d="M200 310 C180 260 155 220 132 180"/>
+    <path d="M200 310 C220 260 245 220 268 180"/>
+  </g>
+  <g fill="#6f8067" opacity=".7">
+    <path d="M170 275c-22-10-34-26-34-42 22 3 38 14 44 30Z"/>
+    <path d="M230 275c22-10 34-26 34-42-22 3-38 14-44 30Z"/>
+  </g>
+  <g stroke="#4b2e3f" stroke-width="2">
+    <g transform="translate(200 120)">
+      <circle r="10" fill="#f2e8d8"/>
+      <path d="M0-10c-17-12-23-29-10-36 10-6 22 3 19 15" fill="#8f5268"/>
+      <path d="M10 0c12-17 29-23 36-10 6 10-3 22-15 19" fill="#8f5268"/>
+      <path d="M0 10c17 12 23 29 10 36-10 6-22-3-19-15" fill="#8f5268"/>
+      <path d="M-10 0c-12 17-29 23-36 10-6-10 3-22 15-19" fill="#8f5268"/>
+      <circle r="5" fill="#b98a4b"/>
+    </g>
+    <g transform="translate(132 180)">
+      <circle r="8" fill="#f2e8d8"/>
+      <path d="M0-8c-14-9-19-24-8-30 9-5 18 3 15 13" fill="#c98b9b"/>
+      <path d="M8 0c9-14 24-19 30-8 5 9-3 18-13 15" fill="#c98b9b"/>
+      <path d="M0 8c14 9 19 24 8 30-9 5-18-3-15-13" fill="#c98b9b"/>
+      <path d="M-8 0c-9 14-24 19-30 8-5-9 3-18 13-15" fill="#c98b9b"/>
+    </g>
+    <g transform="translate(268 180)">
+      <circle r="8" fill="#f2e8d8"/>
+      <path d="M0-8c-14-9-19-24-8-30 9-5 18 3 15 13" fill="#c98b9b"/>
+      <path d="M8 0c9-14 24-19 30-8 5 9-3 18-13 15" fill="#c98b9b"/>
+      <path d="M0 8c14 9 19 24 8 30-9 5-18-3-15-13" fill="#c98b9b"/>
+      <path d="M-8 0c-9 14-24 19-30 8-5-9 3-18 13-15" fill="#c98b9b"/>
+    </g>
+  </g>
+  <path d="M162 342 Q200 316 238 342 L226 382 Q200 392 174 382 Z" fill="#f2e8d8" stroke="#4b2e3f" stroke-width="2"/>
+  <path d="M162 342 Q200 360 238 342" fill="none" stroke="#b98a4b" stroke-width="2"/>
+</svg>

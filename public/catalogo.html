@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo · Flor de Salada</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="catalogo">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="section-head">
+      <div><h1>Catálogo</h1><p class="subtitle">Elegí el tipo de flor y personalizá tu ramo a tu gusto.</p></div>
+      <span class="badge celeste" id="resultCount">0 productos</span>
+    </div>
+
+    <div class="filters card">
+      <input id="searchInput" type="search" placeholder="Buscar flores o ramos...">
+      <select id="typeFilter">
+        <option value="">Todos los tipos</option>
+        <option value="natural">Naturales</option>
+        <option value="limpiapipas">Limpiapipas</option>
+        <option value="cinta_raso">Cinta de raso</option>
+        <option value="crochet">Crochet</option>
+      </select>
+      <label class="check" style="margin:0"><input id="promoFilter" type="checkbox"> Solo promos</label>
+    </div>
+
+    <div class="grid cards" id="catalogGrid"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/js/api.js"></script>
+  <script src="/js/cart.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

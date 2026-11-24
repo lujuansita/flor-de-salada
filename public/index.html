@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flor de Salada</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="tag"><svg class="icon" style="width:14px;height:14px;vertical-align:-2px"><use href="/img/icons.svg#flower"></use></svg> Flores para cada momento</span>
+        <h1>Flor de Salada</h1>
+        <p class="subtitle">Ramos naturales, de limpiapipas, cinta de raso y crochet. Elegí tus colores, envoltorio, moño y agregá una carta, frase o luces. Vos lo armás, nosotros lo preparamos.</p>
+        <div class="row" style="margin-top:24px">
+          <a class="btn btn-primary" href="/catalogo.html"><svg class="icon"><use href="/img/icons.svg#flower"></use></svg> Ver catálogo</a>
+          <a class="btn btn-outline" href="/registro.html"><svg class="icon"><use href="/img/icons.svg#heart"></use></svg> Crear cuenta</a>
+        </div>
+      </div>
+      <div class="hero-art"><img src="/img/hero-bouquet.svg" alt="Ramo elegante de Flor de Salada"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div><h2>Tipos de flores</h2><p class="muted">Todo lo que te gusta, en un solo lugar.</p></div></div>
+      <div class="grid cards">
+        <a class="card center" href="/catalogo.html?type=natural"><img class="cat-icon" src="/img/flor-natural.svg" alt=""><h3>Naturales</h3><p class="muted">Frescas y aromáticas.</p></a>
+        <a class="card center" href="/catalogo.html?type=limpiapipas"><img class="cat-icon" src="/img/flor-limpiapipas.svg" alt=""><h3>Limpiapipas</h3><p class="muted">Pintadas a mano, duraderas.</p></a>
+        <a class="card center" href="/catalogo.html?type=cinta_raso"><img class="cat-icon" src="/img/flor-cinta.svg" alt=""><h3>Cinta de raso</h3><p class="muted">Brillo y delicadeza.</p></a>
+        <a class="card center" href="/catalogo.html?type=crochet"><img class="cat-icon" src="/img/flor-crochet.svg" alt=""><h3>Crochet</h3><p class="muted">Tejidas a mano, eternas.</p></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div><h2>Promos y ramos prearmados</h2><p class="muted">Listos para regalar, con descuento.</p></div>
+        <a class="btn btn-light btn-small" href="/catalogo.html?promo=1"><svg class="icon"><use href="/img/icons.svg#tag"></use></svg> Ver todas</a>
+      </div>
+      <div class="grid cards" id="promos"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div><h2>Destacados</h2><p class="muted">Los preferidos de Flor de Salada.</p></div></div>
+      <div class="grid cards" id="destacados"></div>
+    </section>
+
+    <section class="section card center">
+      <svg class="empty-icon" style="color:var(--gold)"><use href="/img/icons.svg#building"></use></svg>
+      <h2>¿Vendés flores?</h2>
+      <p class="muted">Cada empresa tiene su propio catálogo, usuarios, pedidos y reseñas.</p>
+      <a class="btn btn-lila" href="/registro.html"><svg class="icon"><use href="/img/icons.svg#building"></use></svg> Quiero vender en Flor de Salada</a>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/js/api.js"></script>
+  <script src="/js/cart.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

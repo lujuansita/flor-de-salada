@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Productos · Flor de Salada</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="panel" data-panel="productos">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="panel-layout">
+      <aside class="sidebar">
+        <a href="/panel/index.html"><svg class="icon"><use href="/img/icons.svg#chart"></use></svg> Resumen</a>
+        <a href="/panel/productos.html"><svg class="icon"><use href="/img/icons.svg#flower"></use></svg> Productos</a>
+        <a href="/panel/pedidos.html"><svg class="icon"><use href="/img/icons.svg#box"></use></svg> Pedidos</a>
+        <a href="/panel/usuarios.html"><svg class="icon"><use href="/img/icons.svg#users"></use></svg> Usuarios</a>
+        <a href="/panel/resenas.html"><svg class="icon"><use href="/img/icons.svg#star"></use></svg> Reseñas</a>
+        <a href="/panel/empresas.html"><svg class="icon"><use href="/img/icons.svg#building"></use></svg> Empresas</a>
+      </aside>
+      <div id="panelRoot">
+        <h1>Productos</h1>
+        <p class="subtitle">Cargá flores de todos los tipos y subí sus imágenes.</p>
+
+        <div class="card" style="margin-bottom:24px">
+          <h3 id="formTitle">Cargar flor o ramo</h3>
+          <p class="muted" id="editingInfo" style="font-size:.85rem"></p>
+          <form id="productForm" enctype="multipart/form-data">
+            <div class="grid two">
+              <div class="field"><label for="pname">Nombre</label><input id="pname" name="name" required placeholder="Ej. Ramo de rosas naturales"></div>
+              <div class="field">
+                <label for="ptype">Tipo</label>
+                <select id="ptype" name="type">
+                  <option value="natural">Naturales</option>
+                  <option value="limpiapipas">Limpiapipas</option>
+                  <option value="cinta_raso">Cinta de raso</option>
+                  <option value="crochet">Crochet</option>
+                </select>
+              </div>
+            </div>
+            <div class="field"><label for="pdesc">Descripción</label><textarea id="pdesc" name="description" placeholder="Contanos los detalles del ramo"></textarea></div>
+            <div class="grid two">
+              <div class="field"><label for="pprice">Precio</label><input id="pprice" name="price" type="number" min="0" required></div>
+              <div class="field"><label for="pold">Precio anterior (opcional)</label><input id="pold" name="oldPrice" type="number" min="0"></div>
+            </div>
+            <div class="field"><label for="pstock">Stock</label><input id="pstock" name="stock" type="number" min="0" value="10"></div>
+            <div class="field"><label for="pimages">Imágenes (hasta 5)</label><input id="pimages" name="images" type="file" accept="image/*" multiple></div>
+            <label class="check"><input name="promo" type="checkbox"> Es promoción</label>
+            <label class="check"><input name="prearmado" type="checkbox"> Es ramo prearmado</label>
+            <button class="btn btn-primary btn-block" type="submit" style="margin-top:14px">Guardar producto</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3> Productos cargados</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th></th><th>Producto</th><th>Precio</th><th>Stock</th><th>Etiquetas</th><th>Acciones</th></tr></thead>
+              <tbody id="productList"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/js/api.js"></script>
+  <script src="/js/cart.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
