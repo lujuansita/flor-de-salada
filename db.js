@@ -116,7 +116,7 @@ function seed() {
     {
       id: 'ord_demo_1', companyId: company.id, userId: 'usr_cliente',
       customerName: 'Cliente demo', email: 'cliente@flordesalada.com',
-      items: [{ productId: 'prod_1', name: 'Ramo de rosas naturales', qty: 1, price: 4500, options: { color: 'Marfil', envoltorio: 'Papel marfil', moño: 'Moño de raso', extras: ['Carta'], cantidadFlores: 12 } }],
+      items: [{ productId: 'prod_1', name: 'Ramo de rosas naturales', qty: 1, price: 4500, options: { color: 'Marfil', envoltorio: 'Papel marfil', moño: 'Moño de raso', extras: ['Carta'], cantidadFlores: 12, carta: 'Feliz cumple, mamá. Te quiero mucho.' } }],
       delivery: 'delivery', address: 'Av. Sarmiento 123, Luján',
       payment: 'mercadopago', status: 'pendiente', total: 4800,
       createdAt: new Date().toISOString()

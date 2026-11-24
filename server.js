@@ -278,7 +278,8 @@ app.post('/api/orders', requireAuth, (req, res) => {
     const product = data.products.find(p => p.id === item.productId && p.companyId === company.id);
     if (!product) return res.status(400).json({ error: 'Hay un producto que ya no está disponible.' });
     const qty = Math.max(1, Number(item.qty) || 1);
-    const unit = Number(product.price) + extrasCost(product, item.extras);
+    const selectedExtras = (item.options && item.options.extras) || item.extras || [];
+    const unit = Number(product.price) + extrasCost(product, selectedExtras);
     total += unit * qty;
     normalized.push({
       productId: product.id, name: product.name, qty,

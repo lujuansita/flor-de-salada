@@ -510,11 +510,17 @@
       async function loadOrders() {
         try {
           const orders = await window.api('/api/orders');
-          $('#orderList').innerHTML = orders.map(order => `
+          $('#orderList').innerHTML = orders.map(order => {
+            const notes = (order.items || [])
+              .filter(i => i.options && i.options.carta)
+              .map(i => `<div class="card-note"><strong>${esc(i.name)}</strong><br>“${esc(i.options.carta)}”</div>`)
+              .join('');
+            return `
             <tr>
               <td>${esc(order.id)}<br><small class="muted">${new Date(order.createdAt).toLocaleDateString('es-AR')}</small></td>
               <td>${esc(order.customerName)}</td>
               <td>${order.items.map(i => `${i.qty} × ${esc(i.name)}`).join('<br>')}</td>
+              <td>${notes || '<span class="muted">Sin carta</span>'}</td>
               <td>${order.delivery === 'pickup' ? 'Retiro' : esc(order.address)}<br><small class="muted">${esc(order.payment)}</small></td>
               <td><strong>${money(order.total)}</strong></td>
               <td>
@@ -523,7 +529,8 @@
                   ${Object.keys(statusLabels).map(status => `<option value="${status}" ${status === order.status ? 'selected' : ''}>${statusLabels[status]}</option>`).join('')}
                 </select>
               </td>
-            </tr>`).join('') || '<tr><td colspan="6" class="muted">Todavía no hay pedidos.</td></tr>';
+            </tr>`;
+          }).join('') || '<tr><td colspan="7" class="muted">Todavía no hay pedidos.</td></tr>';
           $$('[data-order]').forEach(select => select.addEventListener('change', async () => {
             try {
               await window.api('/api/orders/' + encodeURIComponent(select.dataset.order) + '/status', {

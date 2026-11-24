@@ -273,6 +273,8 @@ table { width: 100%; border-collapse: collapse; font-size: .88rem; }
 th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--line); vertical-align: middle; }
 th { color: var(--plum); font-size: .72rem; text-transform: uppercase; letter-spacing: .11em; border-bottom: 2px solid var(--gold); }
 tr:hover td { background: var(--cream); }
+.card-note { background: var(--cream); border: 1px solid var(--gold-soft); border-left: 3px solid var(--gold); border-radius: 8px; padding: 8px 10px; margin-top: 6px; max-width: 260px; font-size: .82rem; color: var(--plum); }
+.card-note strong { font-size: .78rem; color: var(--muted); }
 .panel-layout { display: grid; grid-template-columns: 220px 1fr; gap: 24px; }
 .sidebar { background: var(--paper); border-radius: var(--radius); padding: 14px; border: 1px solid var(--line); height: fit-content; box-shadow: var(--shadow); }
 .sidebar a { display: flex; align-items: center; gap: 9px; padding: 10px 13px; border-radius: 8px; color: var(--muted); font-size: .9rem; }
